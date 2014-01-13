@@ -3,6 +3,9 @@
 
 // Global templates
 
+$suitred: #eb4f28;
+$mandarin: #417a4b;
+
 %group:after {
     display: table;
     clear: both;
@@ -14,8 +17,38 @@
     max-width: 960px;
 }
 
+%bubble {
+	position: absolute;
+	z-index: 1;
+	width: 30%;
+	max-height: 100px;
+	max-width: 200px;
+	text-align: center;
+	padding: 8px;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+%highlight {
+	font-size: 18pt;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
 html {
 	height: 100%;
+}
+
+.origin {
+	@extend %highlight;
+	color: $suitred;
+}
+
+.nemesis {
+	@extend %highlight;
+	color: $mandarin;
 }
 
 .top_img {
@@ -28,26 +61,16 @@ html {
     	min-height: 100%;
     }
 
-.gap {
-	position: absolute;
-	z-index: 1;
-	width: 30%;
+.gap1 {
+	@extend %bubble;
 	top: 10%;
 	left: 5%;
-	max-height: 100px;
-	max-width: 200px;
-	text-align: center;
-	padding: 8px;
-	background: white;
-	border-radius: 5px;
-	border: 1px solid black;
-	overflow: hidden;
+}
 
-    .highlight {
-		font-size: 18pt;
-		font-weight: bold;
-		white-space: nowrap;
-	}
+.gap2 {
+	@extend %bubble;
+	top: 80%;
+	left: 60%;
 }
 
 .second_img {
@@ -72,7 +95,7 @@ a {
 // Everything else
 
 @media screen and (max-width: 600px) {
-	    .gap {
+	    %bubble {
 	    	position: relative;
 	    	max-height: 200px;
 	    	max-width: 100%;
