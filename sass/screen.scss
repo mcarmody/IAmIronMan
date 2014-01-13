@@ -14,10 +14,55 @@
     max-width: 960px;
 }
 
-// Global tags
+html {
+	height: 100%;
+}
+
+.top_img {
+    	position: relative;
+    	background: url(/img/first.jpg) no-repeat top center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+    	min-height: 100%;
+    }
+
+.gap {
+	position: absolute;
+	z-index: 1;
+	width: 30%;
+	top: 10%;
+	left: 5%;
+	max-height: 100px;
+	max-width: 200px;
+	text-align: center;
+	padding: 8px;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid black;
+	overflow: hidden;
+
+    .highlight {
+		font-size: 18pt;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+}
+
+.second_img {
+	position: relative;
+	background: url(/img/second.jpg) no-repeat top center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+}
 
 body {
-    background: pink;
+	font-family: 'Marvel', sans-serif;
+	height: 100%;
 }
 
 a {
@@ -25,3 +70,15 @@ a {
 }
 
 // Everything else
+
+@media screen and (max-width: 600px) {
+	    .gap {
+	    	position: relative;
+	    	max-height: 200px;
+	    	max-width: 100%;
+	    	width: 100%;
+	    	top: 100%;
+	    	left: 0;
+	    	border-radius: 0px;
+	    }
+}
