@@ -55,8 +55,36 @@ table {
   background-position: 0 0;
 }
 
+.gap1, .gap2 {
+  position: absolute;
+  z-index: 1;
+  width: 30%;
+  max-height: 100px;
+  max-width: 200px;
+  text-align: center;
+  padding: 8px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.origin, .nemesis {
+  font-size: 18pt;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
 html {
   height: 100%;
+}
+
+.origin {
+  color: #eb4f28;
+}
+
+.nemesis {
+  color: #417a4b;
 }
 
 .top_img {
@@ -69,25 +97,14 @@ html {
   min-height: 100%;
 }
 
-.gap {
-  position: absolute;
-  z-index: 1;
-  width: 30%;
+.gap1 {
   top: 10%;
   left: 5%;
-  max-height: 100px;
-  max-width: 200px;
-  text-align: center;
-  padding: 8px;
-  background: white;
-  border-radius: 5px;
-  border: 1px solid black;
-  overflow: hidden;
 }
-.gap .highlight {
-  font-size: 18pt;
-  font-weight: bold;
-  white-space: nowrap;
+
+.gap2 {
+  top: 80%;
+  left: 60%;
 }
 
 .second_img {
@@ -110,7 +127,7 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .gap {
+  .gap1, .gap2 {
     position: relative;
     max-height: 200px;
     max-width: 100%;
