@@ -84,6 +84,16 @@ html {
 	min-height: 100%;
 }
 
+.third_img {
+	position: relative;
+	background: url(/img/third.jpg) no-repeat top center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+}
+
 body {
 	font-family: 'Marvel', sans-serif;
 	height: 100%;
