@@ -55,28 +55,12 @@ table {
   background-position: 0 0;
 }
 
-html {
-  height: 100%;
-}
-
-.top_img {
-  position: relative;
-  background: url(/img/first.jpg) no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 100%;
-}
-
-.gap {
+.gap2, .gap3, .gap4 {
   position: absolute;
   z-index: 1;
   width: 30%;
-  top: 10%;
-  left: 5%;
   max-height: 100px;
-  max-width: 200px;
+  max-width: 400px;
   text-align: center;
   padding: 8px;
   background: white;
@@ -84,15 +68,123 @@ html {
   border: 1px solid black;
   overflow: hidden;
 }
-.gap .highlight {
+
+.flying, .origin, .nemesis, .friends {
   font-size: 18pt;
   font-weight: bold;
   white-space: nowrap;
 }
 
+html {
+  height: 105%;
+}
+
+.flying {
+  color: #eb4f28;
+}
+
+.origin {
+  color: #767676;
+}
+
+.nemesis {
+  color: #417a4b;
+}
+
+.friends {
+  color: black;
+}
+
+.top_img {
+  position: relative;
+  background: url(/img/flying.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.invincible {
+  margin: 0 auto;
+  position: absolute;
+  top: 5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+.authors {
+  position: absolute;
+  top: 5%;
+  text-align: left;
+  z-index: 1;
+  font-size: 4vw;
+  color: black;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.barcode {
+  height: 30%;
+  position: absolute;
+  z-index: 1;
+  top: 75%;
+}
+
+.ironman {
+  left: 27.5%;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  color: black;
+  width: 45%;
+}
+
+.gap2 {
+  top: 43%;
+  left: 65%;
+  min-width: 200px;
+}
+
+.gap3 {
+  top: 80%;
+  left: 60%;
+  min-width: 200px;
+}
+
+.gap4 {
+  top: 8%;
+  left: 3%;
+  min-width: 200px;
+}
+
 .second_img {
   position: relative;
-  background: url(/img/second.jpg) no-repeat top center fixed;
+  background: url(/img/born.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.third_img {
+  position: relative;
+  background: url(/img/mandarin.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.fourth_img {
+  position: relative;
+  background: url(/img/friends.jpg) no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -109,9 +201,11 @@ a {
   color: #800000;
 }
 
-@media screen and (max-width: 600px) {
-  .gap {
+@media screen and (max-width: 500px) {
+  .gap2, .gap3, .gap4 {
     position: relative;
+    border-left: 0px;
+    border-right: 0px;
     max-height: 200px;
     max-width: 100%;
     width: 100%;
