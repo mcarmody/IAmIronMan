@@ -55,7 +55,7 @@ table {
   background-position: 0 0;
 }
 
-.gap2, .gap3 {
+.gap2, .gap3, .gap4 {
   position: absolute;
   z-index: 1;
   width: 30%;
@@ -69,7 +69,7 @@ table {
   overflow: hidden;
 }
 
-.flying, .origin, .nemesis {
+.flying, .origin, .nemesis, .friends {
   font-size: 18pt;
   font-weight: bold;
   white-space: nowrap;
@@ -91,6 +91,10 @@ html {
   color: #417a4b;
 }
 
+.friends {
+  color: black;
+}
+
 .top_img {
   position: relative;
   background: url(/img/flying.jpg) no-repeat top center fixed;
@@ -104,7 +108,7 @@ html {
 .invincible {
   margin: 0 auto;
   position: absolute;
-  top: 10px;
+  top: 5px;
   text-align: center;
   color: white;
   font-weight: bold;
@@ -113,7 +117,8 @@ html {
 
 .authors {
   position: absolute;
-  top: 8%;
+  top: 5%;
+  text-align: left;
   z-index: 1;
   font-size: 4vw;
   color: black;
@@ -151,6 +156,12 @@ html {
   min-width: 200px;
 }
 
+.gap4 {
+  top: 8%;
+  left: 3%;
+  min-width: 200px;
+}
+
 .second_img {
   position: relative;
   background: url(/img/born.jpg) no-repeat top center fixed;
@@ -171,6 +182,16 @@ html {
   min-height: 100%;
 }
 
+.fourth_img {
+  position: relative;
+  background: url(/img/friends.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+}
+
 body {
   font-family: 'Marvel', sans-serif;
   height: 100%;
@@ -181,7 +202,7 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .gap2, .gap3 {
+  .gap2, .gap3, .gap4 {
     position: relative;
     border-left: 0px;
     border-right: 0px;

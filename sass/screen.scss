@@ -57,6 +57,11 @@ html {
 	color: $mandarin;
 }
 
+.friends {
+	@extend %highlight;
+	color: black;
+}
+
 .top_img {
     	position: relative;
     	background: url(/img/flying.jpg) no-repeat top center fixed;
@@ -70,7 +75,7 @@ html {
 .invincible {
 	margin: 0 auto;
 	position: absolute;
-	top: 10px;
+	top: 5px;
 	text-align: center;
 	color: white;
 	font-weight: bold;
@@ -79,7 +84,8 @@ html {
 
 .authors {
 	position: absolute;
-	top: 8%;
+	top: 5%;
+	text-align: left;
 	z-index: 1;
 	font-size: 4vw;
 	color: black;
@@ -118,6 +124,13 @@ html {
 	min-width: 200px;
 }
 
+.gap4 {
+	@extend %bubble;
+	top: 8%;
+	left: 3%;
+	min-width: 200px;
+}
+
 .second_img {
 	position: relative;
 	background: url(/img/born.jpg) no-repeat top center fixed;
@@ -131,6 +144,16 @@ html {
 .third_img {
 	position: relative;
 	background: url(/img/mandarin.jpg) no-repeat top center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+}
+
+.fourth_img {
+	position: relative;
+	background: url(/img/friends.jpg) no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
