@@ -55,7 +55,7 @@ table {
   background-position: 0 0;
 }
 
-.gap1, .gap2 {
+.gap1, .gap2, .gap3 {
   position: absolute;
   z-index: 1;
   width: 30%;
@@ -89,12 +89,32 @@ html {
 
 .top_img {
   position: relative;
-  background: url(/img/first.jpg) no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 100%;
+  background: url(/img/first.jpg) no-repeat fixed top center;
+}
+
+.second_img {
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  background: url(/img/second.jpg) no-repeat fixed top center;
+}
+
+.third_img {
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  background: url(/img/back.jpg) no-repeat fixed top center;
 }
 
 .gap1 {
@@ -107,14 +127,9 @@ html {
   left: 60%;
 }
 
-.second_img {
-  position: relative;
-  background: url(/img/second.jpg) no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 100%;
+.gap3 {
+  top: 80%;
+  left: 60%;
 }
 
 body {
@@ -127,7 +142,7 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .gap1, .gap2 {
+  .gap1, .gap2, .gap3 {
     position: relative;
     max-height: 200px;
     max-width: 100%;
