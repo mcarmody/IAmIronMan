@@ -111,6 +111,25 @@ html {
   width: 100%;
 }
 
+.authors {
+  position: absolute;
+  top: 8%;
+  z-index: 1;
+  font-size: 4vw;
+  color: black;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.barcode {
+  height: 30%;
+  position: absolute;
+  z-index: 1;
+  top: 75%;
+}
+
 .ironman {
   left: 27.5%;
   position: absolute;
