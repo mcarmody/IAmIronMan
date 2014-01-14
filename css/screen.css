@@ -55,7 +55,7 @@ table {
   background-position: 0 0;
 }
 
-.gap1, .gap2, .gap3 {
+.gap2, .gap3 {
   position: absolute;
   z-index: 1;
   width: 30%;
@@ -101,9 +101,23 @@ html {
   min-height: 100%;
 }
 
-.gap1 {
-  top: 10%;
-  left: 5%;
+.invincible {
+  margin: 0 auto;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+.ironman {
+  left: 27.5%;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  color: black;
+  width: 45%;
 }
 
 .gap2 {
@@ -148,7 +162,7 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .gap1, .gap2, .gap3 {
+  .gap2, .gap3 {
     position: relative;
     border-left: 0px;
     border-right: 0px;

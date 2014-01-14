@@ -67,10 +67,23 @@ html {
     	min-height: 100%;
     }
 
-.gap1 {
-	@extend %bubble;
-	top: 10%;
-	left: 5%;
+.invincible {
+	margin: 0 auto;
+	position: absolute;
+	top: 10px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	width: 100%;
+}
+
+.ironman {
+	left: 27.5%;
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	color: black;
+	width: 45%;
 }
 
 .gap2 {
