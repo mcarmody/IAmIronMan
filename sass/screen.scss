@@ -16,10 +16,12 @@ $iron: darken(darkgrey, 20%);
 %container {
     margin: 0 auto;
     max-width: 960px;
+
 }
 
 %bubble {
 	position: absolute;
+	font-size: 10pt;
 	z-index: 1;
 	width: 30%;
 	max-height: 100px;
@@ -30,12 +32,29 @@ $iron: darken(darkgrey, 20%);
 	border-radius: 5px;
 	border: 1px solid black;
 	overflow: hidden;
+	font-family: 'Delius', cursive;
+}
+
+%narration {
+	@extend %bubble;
+	top: 0%;
+	left: 0%;
+	border-radius: 0px;
+	background: lighten(gold, 35%);
+	min-width: 200px;
+	font-style: italic;
 }
 
 %highlight {
 	font-size: 18pt;
 	font-weight: bold;
 	white-space: nowrap;
+}
+
+%background {
+	position: relative;
+	min-height: 100%;
+	border-bottom: 2px solid black;
 }
 
 html {
@@ -50,6 +69,7 @@ html {
 .origin {
 	@extend %highlight;
 	color: $iron;
+	display: inline;
 }
 
 .nemesis {
@@ -63,14 +83,13 @@ html {
 }
 
 .top_img {
-    	position: relative;
+    	@extend %background;
     	background: url(/img/flying.jpg) no-repeat top center fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-    	min-height: 100%;
-    }
+	}
 
 .invincible {
 	margin: 0 auto;
@@ -98,67 +117,75 @@ html {
 	height: 30%;
 	position: absolute;
 	z-index: 1;
-	top: 75%;
+	top: 74.7%;
 }
 
 .ironman {
-	left: 27.5%;
+	left: 31%;
 	position: absolute;
-	top: 0px;
+	top: 5px;
 	text-align: center;
 	color: black;
-	width: 45%;
+	width: 40%;
 }
 
 .gap2 {
-	@extend %bubble;
-	top: 43%;
-	left: 65%;
-	min-width: 200px;
+	@extend %narration;
+	border-top: 0px;
+	border-left: 0px;
 }
 
 .gap3 {
-	@extend %bubble;
-	top: 80%;
+	@extend %narration;
+	top: 90%;
 	left: 60%;
-	min-width: 200px;
+	width: 40%;
+	height: 10%;
 }
 
 .gap4 {
-	@extend %bubble;
+	@extend %narration;
 	top: 8%;
 	left: 3%;
 	min-width: 200px;
 }
 
+.origin_bubble {
+	@extend %bubble;
+	top: 25vw;
+	left: 50%;
+	font-family: 'Bangers', cursive;
+	border: 3px solid black;
+	font-size: 18pt;
+	max-width: 1000px;
+	max-height: 1000px;
+}
+
 .second_img {
-	position: relative;
+	@extend %background;
 	background: url(/img/born.jpg) no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	min-height: 100%;
 }
 
 .third_img {
-	position: relative;
+	@extend %background;
 	background: url(/img/mandarin.jpg) no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	min-height: 100%;
 }
 
 .fourth_img {
-	position: relative;
+	@extend %background;
 	background: url(/img/friends.jpg) no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	min-height: 100%;
 }
 
 body {
