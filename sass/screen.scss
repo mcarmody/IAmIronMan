@@ -228,17 +228,20 @@ a {
 // Everything else
 
 @media screen and (max-width: 500px) {
-	    %bubble {
-	    	position: relative;
-	    	border-left: 0px;
-	    	border-right: 0px;
-	    	max-height: 200px;
-	    	max-width: 100%;
-	    	width: 100%;
-	    	top: 100%;
-	    	left: 0;
-	    	border-radius: 0px;
-	    }
+    %bubble {
+    	position: relative;
+    	border-left: 0px;
+    	border-right: 0px;
+    	max-height: 200px;
+    	max-width: 100%;
+    	width: 100%;
+    	top: 100%;
+    	left: 0;
+    	border-radius: 0px;
+    }
 
-
+	.enter-text {
+		width: 80%;
+		left: 10%;
+	}
 }
