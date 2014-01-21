@@ -6,6 +6,7 @@
 $suitred: #eb4f28;
 $mandarin: #417a4b;
 $iron: darken(darkgrey, 20%);
+$avengers: darken(blue, 15%);
 
 %group:after {
     display: table;
@@ -49,6 +50,7 @@ $iron: darken(darkgrey, 20%);
 	font-size: 18pt;
 	font-weight: bold;
 	white-space: nowrap;
+	display: inline;
 }
 
 %background {
@@ -69,27 +71,20 @@ html {
 .origin {
 	@extend %highlight;
 	color: $iron;
-	display: inline;
 }
 
 .nemesis {
 	@extend %highlight;
 	color: $mandarin;
+	font-size: 10pt;
 }
 
 .friends {
 	@extend %highlight;
-	color: black;
+	color: $avengers;
+	font-size: 10pt;
 }
 
-.top_img {
-    	@extend %background;
-    	background: url(/img/flying.jpg) no-repeat top center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
 
 .invincible {
 	margin: 0 auto;
@@ -120,15 +115,6 @@ html {
 	top: 74.7%;
 }
 
-.ironman {
-	left: 31%;
-	position: absolute;
-	top: 5px;
-	text-align: center;
-	color: black;
-	width: 40%;
-}
-
 .gap2 {
 	@extend %narration;
 	border-top: 0px;
@@ -137,7 +123,7 @@ html {
 
 .gap3 {
 	@extend %narration;
-	top: 90%;
+	top: 80%;
 	left: 60%;
 	width: 40%;
 	height: 10%;
@@ -148,6 +134,13 @@ html {
 	top: 8%;
 	left: 3%;
 	min-width: 200px;
+}
+
+.gap5 {
+	@extend %narration;
+	top: 45%;
+	left: 35%;
+	width: 30%;
 }
 
 .origin_bubble {
@@ -161,6 +154,24 @@ html {
 	max-height: 1000px;
 }
 
+.ironman {
+	left: 31%;
+	position: absolute;
+	top: 5px;
+	text-align: center;
+	color: black;
+	width: 40%;
+}
+
+.top_img {
+    	@extend %background;
+    	background: url(/img/flying.jpg) no-repeat top center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
 .second_img {
 	@extend %background;
 	background: url(/img/born.jpg) no-repeat top center fixed;
@@ -186,6 +197,23 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+.form {
+	@extend %background;
+	background: url(/img/form_bg.jpg) no-repeat top center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.enter-text {
+	position: absolute;
+	left: 40%;
+	top: 55%;
+	width: 20%;
+	height: 15%;
 }
 
 body {

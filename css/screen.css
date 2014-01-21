@@ -55,7 +55,7 @@ table {
   background-position: 0 0;
 }
 
-.gap2, .gap3, .gap4, .origin_bubble {
+.gap2, .gap3, .gap4, .gap5, .origin_bubble {
   position: absolute;
   font-size: 10pt;
   z-index: 1;
@@ -71,7 +71,7 @@ table {
   font-family: 'Delius', cursive;
 }
 
-.gap2, .gap3, .gap4 {
+.gap2, .gap3, .gap4, .gap5 {
   top: 0%;
   left: 0%;
   border-radius: 0px;
@@ -84,9 +84,10 @@ table {
   font-size: 18pt;
   font-weight: bold;
   white-space: nowrap;
+  display: inline;
 }
 
-.top_img, .second_img, .third_img, .fourth_img {
+.top_img, .second_img, .third_img, .fourth_img, .form {
   position: relative;
   min-height: 100%;
   border-bottom: 2px solid black;
@@ -102,23 +103,16 @@ html {
 
 .origin {
   color: #767676;
-  display: inline;
 }
 
 .nemesis {
   color: #417a4b;
+  font-size: 10pt;
 }
 
 .friends {
-  color: black;
-}
-
-.top_img {
-  background: url(/img/flying.jpg) no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  color: #0000b3;
+  font-size: 10pt;
 }
 
 .invincible {
@@ -151,22 +145,13 @@ html {
   top: 74.7%;
 }
 
-.ironman {
-  left: 31%;
-  position: absolute;
-  top: 5px;
-  text-align: center;
-  color: black;
-  width: 40%;
-}
-
 .gap2 {
   border-top: 0px;
   border-left: 0px;
 }
 
 .gap3 {
-  top: 90%;
+  top: 80%;
   left: 60%;
   width: 40%;
   height: 10%;
@@ -178,6 +163,12 @@ html {
   min-width: 200px;
 }
 
+.gap5 {
+  top: 45%;
+  left: 35%;
+  width: 30%;
+}
+
 .origin_bubble {
   top: 25vw;
   left: 50%;
@@ -186,6 +177,23 @@ html {
   font-size: 18pt;
   max-width: 1000px;
   max-height: 1000px;
+}
+
+.ironman {
+  left: 31%;
+  position: absolute;
+  top: 5px;
+  text-align: center;
+  color: black;
+  width: 40%;
+}
+
+.top_img {
+  background: url(/img/flying.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .second_img {
@@ -212,6 +220,22 @@ html {
   background-size: cover;
 }
 
+.form {
+  background: url(/img/form_bg.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.enter-text {
+  position: absolute;
+  left: 40%;
+  top: 55%;
+  width: 20%;
+  height: 15%;
+}
+
 body {
   font-family: 'Marvel', sans-serif;
   height: 100%;
@@ -222,7 +246,7 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .gap2, .gap3, .gap4, .origin_bubble {
+  .gap2, .gap3, .gap4, .gap5, .origin_bubble {
     position: relative;
     border-left: 0px;
     border-right: 0px;
